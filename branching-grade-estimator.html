@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Branching-Grade-Estimator</title>
+  </head>
+  <body>
+    <script>
+      grade = parseInt(prompt("Your grade please: "));
+      
+// HW 1: ce returneaza urmatoarele expresii: parseInt(9.9) parseInt(9.1) parseInt(9.5) parseInt(9.59)
+// Raspuns: 9 
+// Explicatie: prompt-ul returneaza string iar functia parseInt converteaza in numar intreg fara zecimale. 
+//             Daca dorim sa se pastreze zecimalele trebuie sa folosim parseFloat. 
+//           
+
+
+
+      // LIMIT = 10
+      // if ( grade >= LIMIT ) {
+      //     alert("GOOD!")
+      // } else {
+      //     alert("BAD!")
+      // }
+
+    //   HW 2 ----------------------------------------
+
+      diapason_1 = 4;  // VERY BAD
+      diapason_2 = 6;  // BAD
+      diapason_3 = 8;  // OK
+      diapason_4 = 9;  // GOOD
+      diapason_5 = 10; // EXCELENT
+
+      if (grade === diapason_5) {
+        alert("EXCELENT!");
+      } else if (grade <= diapason_1) {
+        alert("VERY BAD!");
+      } else if (grade <= diapason_2) {
+        alert("BAD!");
+      } else if (grade <= diapason_3) {
+        alert("OK!");
+      } else if (grade === diapason_4) {
+        alert("GOOD!");
+      }
+    </script>
+  </body>
+</html>
+<!--  ce returneaza urmatoarele expresii: parseInt(9.9) parseInt(9.1) parseInt(9.5) parseInt(9.59) -->
